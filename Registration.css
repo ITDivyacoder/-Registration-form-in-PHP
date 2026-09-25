@@ -1,0 +1,122 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.7s ease;
+}
+
+/* Form Heading Space */
+.container form {
+    width: 100%;
+}
+
+/* Input Group */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    height: 55px;
+    padding: 0 18px;
+    border: 1.5px solid #dcdfe8;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background: #f9faff;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder Styling */
+.form-group input::placeholder {
+    color: #888da8;
+    font-size: 14px;
+}
+
+/* Input Focus Effect */
+.form-group input:focus {
+    border-color: #667eea;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.12);
+}
+
+/* Register Button Container */
+.form-grouptration {
+    margin-top: 10px;
+}
+
+/* Register Button */
+.form-grouptration input[type="submit"] {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.form-grouptration input[type="submit"]:hover {
+    background: linear-gradient(135deg, #5367d5, #653b91);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+/* Button Click Effect */
+.form-grouptration input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 22px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
